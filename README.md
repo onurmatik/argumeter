@@ -55,9 +55,9 @@
     
 ## Usage
 
-1.	Open your browser and go to http://127.0.0.1:8000/. 
+1. Open your browser and go to http://127.0.0.1:8000/. 
 2. Submit a discussion thread in the provided form.
-3.	The app will evaluate the arguments and return the results, showing:
+3. The app will evaluate the arguments and return the results, showing:
 
 ## Contributing
 
