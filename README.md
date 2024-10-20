@@ -23,7 +23,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/onurmatik/argumeter.git
    cd argumeter
    ```
    
@@ -36,32 +36,35 @@
 
 3.	Install the required dependencies:
 
-   ```bash
+    ```bash
     touch .env
     ```
     Add the following line to the .env file:
 
-   ```bash
+    ```bash
     OPENAI_API_KEY=your_openai_api_key_here
     ```
 
 6.	Run the app:
 
-   ```bash
+    ```bash
     uvicorn argumeter:app --reload
     ```
 
-    The app will now be running on http://127.0.0.1:8000/.
+    The app will now be running on http://127.0.0.1:8000/
     
+
 ## Usage
 
 1. Open your browser and go to http://127.0.0.1:8000/. 
-2. Submit a discussion thread in the provided form.
-3. The app will evaluate the arguments and return the results, showing:
+2. Submit a discussion thread in the provided form. It can be any text containing a dialog. See a [sample thread](./sample-thread.txt).
+3. The app will evaluate the arguments and return the results, showing the user scores based on the strength of their arguments and a breakdown of their arguments. 
+
 
 ## Contributing
 
 If you’d like to contribute to this project, feel free to submit a pull request or open an issue. Any contributions or feedback are welcome!
+
 
 ## License
 
