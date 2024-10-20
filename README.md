@@ -57,7 +57,7 @@
 ## Usage
 
 1. Open your browser and go to http://127.0.0.1:8000/. 
-2. Submit a discussion thread in the provided form. It can be any text containing a dialog. See a [sample thread](./sample-thread.txt).
+2. Submit a discussion thread in the provided form. It can be any text containing a dialog. See a [sample thread](./samples/climate.txt).
 3. The app will evaluate the arguments and return the results, showing the user scores based on the strength of their arguments and a breakdown of their arguments. 
 
 
