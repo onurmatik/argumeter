@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluation Results</title>
+</head>
+<body>
+    <h1>Evaluation Results</h1>
+
+    <h2>Topic: {{ result.topic }}</h2>
+
+    {% for user in result.users %}
+        <h3>User: {{ user.user }}</h3>
+        <p>Score: {{ user.score }}</p>
+
+        <ul>
+        {% for argument in user.arguments %}
+            <li>
+                <strong>Argument:</strong> {{ argument.argument }}<br>
+                <strong>Evaluation:</strong> {{ argument.evaluation }}<br>
+                <strong>Facts:</strong>
+                <ul>
+                    {% for fact in argument.facts %}
+                        <li>{{ fact }}</li>
+                    {% endfor %}
+                </ul>
+                <strong>Fallacies:</strong>
+                <ul>
+                    {% for fallacy in argument.fallacies %}
+                        <li>{{ fallacy }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
